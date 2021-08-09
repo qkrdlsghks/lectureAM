@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도제 시작</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+
+    <script>
+
+        function abc(a, b) {
+            return a + b;
+        }
+
+        let sum = abc(10, 20);
+
+        log(sum);
+
+        let num = 1;
+        let id = 0; //인터벌 아이디
+
+        function 인터벌()
+        {
+            log(`박인붕 ${".".repeat(num)}`);
+            
+            if(num >= 10) {
+                clearInterval(id);
+            }
+            num++;
+        }
+
+        id = setInterval(인터벌, 500);
+        log(id);
+
+
+
+        // let sum = 0;
+        // for(let i = 0; i < 10; i++ ) {
+        //     if(i % 2 == 0) {
+        //         sum += i;
+        //     }
+        // }
+        // log(sum);
+    </script>
+</body>
+</html>

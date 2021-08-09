@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    position: relative;
+    background-color: beige;
+}
+
+.watch {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.watch > .div {
+    width: 200px;
+    /* border: 1px solid #9e9e9e; */
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50% 0 0 50%;
+    position: relative;
+    transform: rotatey(50deg);
+    box-shadow: 8px -8px  10px 5px inset rgb(219, 219, 219);
+    background-color: #fff;
+}
+
+.dnjs {
+    width: 150px;
+    height: 198px;
+    display: flex;
+    position: absolute;
+    background-color: rgb(228, 228, 228);
+    transform: rotatey(50deg);
+    border-radius: 50%;
+    top: 175px;
+}
+
+.dnjs1 {
+    left: 485px;
+}
+
+.dnjs2 {
+    left: 713px;
+}
+
+.dnjs3 {
+    right: 347px;
+}
+
+.watch > div > .box {
+    width: 100%;
+    height: 100%;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: -13px;
+    transform: rotatey(50deg);
+}
+
+.watch > div > .box:first-child {
+    top:0;
+}
+
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    z-index: 100;
+}
